@@ -30,10 +30,10 @@
   <body>
     <div id="app">
       <h1 class="bg-success text-center m-3 rounded">Genera 10 mail</h1>
-      <ul class="m-5 p-0">
+      <ul class="m-5 p-0 row justify-content-center">
         <li
           v-if="allMail.length === 10"
-          class="text-center border rounded m-1 bg-info"
+          class="text-center border rounded m-1 bg-info col-6"
           v-for="mail in allMail"
         >
           {{mail}}
