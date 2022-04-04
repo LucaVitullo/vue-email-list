@@ -29,9 +29,15 @@
   </head>
   <body>
     <div id="app">
-      <h1>Genera 10 mail</h1>
-      <ul>
-        <li v-for="mail in allMail">{{mail}}</li>
+      <h1 class="bg-success text-center m-3 rounded">Genera 10 mail</h1>
+      <ul class="m-5 p-0">
+        <li
+          v-if="allMail.length === 10"
+          class="text-center border rounded m-1 bg-info"
+          v-for="mail in allMail"
+        >
+          {{mail}}
+        </li>
       </ul>
     </div>
 
